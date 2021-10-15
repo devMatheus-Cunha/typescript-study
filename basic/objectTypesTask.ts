@@ -10,7 +10,7 @@ let supervisors: {
 
 supervisors = {
   employees: ["Matheus", "Lucas", "Pedro"],
-  clockIn: (time: number): string => {
+  clockIn (time: number): string  {
     if (time <= 8) {
       return "Ponto normal";
     } else {
@@ -23,7 +23,7 @@ let supervisors2: ISupervisors;
 
 supervisors = {
   employees: ["Matheus", "Lucas", "Pedro"],
-  clockIn: (time: number): string => {
+  clockIn (time: number): string {
     if (time <= 8) {
       return "Ponto normal";
     } else {
