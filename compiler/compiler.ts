@@ -1,4 +1,4 @@
-//!"noEmitOnError": true =  Disable emitting files if any type checking errors are reported.
+//? "noEmitOnError": true =  Disable emitting files if any type checking errors are reported.
 let chanel: string = "Gaveta"
 let subscribers: number = 31231
 
@@ -7,3 +7,11 @@ console.log("🚀 ~ file: compiler.ts ~ line 4 ~ chanel", chanel)
 
 // !error = name space in more blocks
 // let name: string = "Matheus"
+
+//===========================================
+
+//?  "target": "es6" =  Set the JavaScript language version for emitted JavaScript and include compatible library declarations.
+
+//===========================================
+
+//? "sourceMap": true = Create source map files for emitted JavaScript files. 
