@@ -3,7 +3,7 @@ let chanel: string = "Gaveta";
 let subscribers: number = 31231;
 
 // !error = chanel = subscribers
-console.log("🚀 ~ file: compiler.ts ~ line 4 ~ chanel", chanel);
+console.log(chanel);
 
 // !error = name space in more blocks
 // let name: string = "Matheus"
@@ -25,10 +25,33 @@ function sum(a: any, b: any) {
 }
 sum(2, 4);
 
-let ramdom
-ramdom = "Pedro"
-ramdom = 12
+let ramdom;
+ramdom = "Pedro";
+ramdom = 12;
 
 //===========================================
 
-//? "noImplicitAny": true =  Enable error reporting for expressions and declarations with an implied `any` type
+//? "strictNullChecks": true = When type checking, take into account `null` and `undefined`.
+//? "noUnusedParameters": true = Raise an error when a function parameter isn't read
+//? "noUnusedLocals": true = Enable error reporting when a local variables aren't read.
+
+function greet(isMorning: boolean, hour: number): string {
+  let greeting: string;
+  let ha: string;
+
+  //! error
+  // if (isMorning) {
+  //   greeting = "good morning"
+  // }
+  // return greeting
+
+  //* success
+  if (isMorning) {
+    greeting = "good morning";
+  } else {
+    greeting = "it's night";
+  }
+  return greeting;
+}
+
+console.log(greet(true, 1));
