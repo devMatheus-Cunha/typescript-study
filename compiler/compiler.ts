@@ -55,3 +55,9 @@ function greet(isMorning: boolean, hour: number): string {
 }
 
 console.log(greet(true, 1));
+
+//===========================================
+
+//? "outDir": "./build" =  Specify an output folder for all emitted files.
+
+//? "outFile": "./build/app.js" = Specify a file that bundles all outputs into one JavaScript file. If `declaration` is true, also designates a file that bundles all .d.ts output.
