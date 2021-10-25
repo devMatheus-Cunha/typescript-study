@@ -1,7 +1,5 @@
 // task One
-const double = (value: number): number => {
-  return value * 2;
-};
+const double = (value: number): number => value * 2};
 
 console.log(double(4));
 console.log("====================================");
@@ -16,15 +14,16 @@ sayHello("Matheus");
 // task Three
 const arrayNumbersOne: number[] = [-3, 33, 38, 5];
 console.log("====================================");
-console.log(`O menor numeros do Array e ${Math.min(...arrayNumbersOne)}`);
+console.log(`O menor numero do Array e ${Math.min(...arrayNumbersOne)}`);
 
 // task Four
 const arrayNumbersTwo: number[] = [5, 23, 38, 59];
 const arrayNumbersThree: number[] = [99, 101];
+arrayNumbersTwo.push(...arrayNumbersThree)
 
 console.log("====================================");
 console.log(
-  `O numeros dos Array juntos ${[arrayNumbersTwo, ...arrayNumbersThree]}`
+  `O numeros dos Array juntos ${arrayNumbersTwo}`
 );
 
 // task Five
