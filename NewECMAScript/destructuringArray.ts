@@ -10,3 +10,6 @@ console.log('====================================');
 const [motorTwo, anoTwo] = caracteres
 console.log(`O ${motorTwo} e do ano ${anoTwo} `);
 
+
+              
+        
