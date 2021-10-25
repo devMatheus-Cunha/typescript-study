@@ -1,5 +1,5 @@
 // task One
-const double = (value: number): number => value * 2};
+const double = (value: number): number => value * 2;
 
 console.log(double(4));
 console.log("====================================");
