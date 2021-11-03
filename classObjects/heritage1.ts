@@ -1,0 +1,16 @@
+//? class car is in the file accesModifers
+class Ferrari extends Car {
+  public speedUp(): number {
+    return this.changeSpeed(20);
+  }
+
+  public breke() {
+    return this.changeSpeed(-15);
+  }
+}
+
+const f40 = new Ferrari("Ferrari", "F40", 324);
+const { brand, model, speedUp} = f40
+console.log(`Carro ${model} da marca ${brand}`)
+
+console.log(speedUp())

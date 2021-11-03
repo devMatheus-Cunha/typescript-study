@@ -7,7 +7,7 @@ class Car {
     private maxSpeed: number = 200
   ) {}
 
-  private changeSpeed(delta: number): number {
+  protected changeSpeed(delta: number): number {
     const newSpeed = this.currentSpeed + delta;
     const validateSpeed = newSpeed >= 0 && newSpeed < this.maxSpeed;
 
@@ -33,3 +33,5 @@ Array(40).fill(0).forEach(() => carOne.speedUp())
 console.log(carOne.speedUp())
 
 console.log(carOne.breke())
+
+// carOne.currentSpeed = 1 //! error - method private
