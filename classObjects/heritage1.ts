@@ -3,6 +3,7 @@ class Ferrari extends Car {
   constructor(model: string, maxSpeed:number ){
     super("Ferrari", model, maxSpeed)
   }
+
   public speedUp(): number {
     return this.changeSpeed(20);
   }
