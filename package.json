@@ -19,6 +19,8 @@
   "homepage": "https://github.com/devMatheus-Cunha/typescript-study#readme",
   "dependencies": {
     "@types/live-server": "^1.2.1",
-    "live-server": "^1.2.1"
+    "live-server": "^1.2.1",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4"
   }
 }
