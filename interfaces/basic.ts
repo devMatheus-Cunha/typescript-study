@@ -1,12 +1,16 @@
 interface IPersonProps {
   name: string;
   age?: number;
-  [prop: string] : any // accept any property name and value
+  [prop: string]: any; // accept any property name and value
+  greet(lastName: string): void;
 }
 
 const person: IPersonProps = {
   name: "Matheus",
   age: 21,
+  greet(lastName: string): void {
+    console.log(`Hello my name is ${this.name} ${lastName}`);
+  }
 };
 
 function greetWithHello(person: IPersonProps) {
@@ -14,13 +18,18 @@ function greetWithHello(person: IPersonProps) {
 }
 
 function chageName(person: IPersonProps) {
-  return (person.name = "Pedro");
+  const change = person.name = "Pedro"
+  console.log(`My name changed to ${change}`);
+  
 }
 
 greetWithHello(person);
-console.log(chageName(person));
-greetWithHello({
+person.greet("Cunha")
+chageName(person)
+
+/*greetWithHello({
   name: "Lucas",
   age: 32,
   randomProps: true
 });
+*/
