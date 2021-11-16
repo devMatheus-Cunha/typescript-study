@@ -1,5 +1,5 @@
 //? #1
-class Data {
+class DateClass {
   // types public default attribute
   day: number;
   month: number;
@@ -12,15 +12,15 @@ class Data {
   }
 }
 
-const birthday = new Data(19, 8, 2000);
-const MonthAndYear = new Data(8, 2000);
+const birthday = new DateClass(19, 8, 2000);
+const MonthAndYear = new DateClass(8, 2000);
 
 console.log(birthday);
 console.log(MonthAndYear);
 console.log('====================================');
 
 //? #2
-class DataSmart {
+class DateSmart {
   constructor(
     public day: number = 1,
     public month: number = 1,
@@ -28,8 +28,8 @@ class DataSmart {
   ) {}
 }
 
-const birthdaySmart = new DataSmart(19, 8, 2000);
-const MonthAndYearSmart = new DataSmart(8, 12);
+const birthdaySmart = new DateSmart(19, 8, 2000);
+const MonthAndYearSmart = new DateSmart(8, 12);
 
 // console.log(birthdaySmart);
 // console.log(MonthAndYearSmart);
