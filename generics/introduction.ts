@@ -6,18 +6,15 @@ console.log(echo("Matheus"));
 console.log(echo(21).length);
 console.log(echo({ name: "matheus", age: 21 }));
 
-console.log('====================================');
+console.log("====================================");
 
 // using Generics
-function echoGenerics<Type>(obj: Type): Type {
-  return obj
+function echoGenericsBasic<T>(obj: T): T {
+  return obj;
 }
 
-console.log(echoGenerics("Matheus"));
-console.log(echoGenerics<number>(21));
+console.log(echoGenericsBasic("Matheus"));
+console.log(echoGenericsBasic<number>(21));
 
-const obj = echoGenerics({ name: "matheus", age: 21 })
+const obj = echoGenericsBasic({ name: "matheus", age: 21 });
 console.log(obj.name);
-
-
-
