@@ -1,12 +1,12 @@
-@loginClass
-class HouseholdAppliance {
+@loginClassIntroduction
+class HouseholdApplianceIntroduction {
   constructor() {
     console.log("New");
   }
 }
 
-function loginClass(constructor: Function) {
+function loginClassIntroduction(constructor: Function) {
   console.log(constructor);
 }
 
-new HouseholdAppliance();
+new HouseholdApplianceIntroduction();
